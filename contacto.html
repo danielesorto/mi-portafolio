@@ -11,18 +11,52 @@
     <header>
         <h1>Daniel Enrique Sorto Hernandez</h1>
         <nav>
-             <ul>
-                <li>Inicio</li>
-                <li>Proyectos</li>
-                <li>Contacto</li>
-             </ul>
-            <!--Aqui la barra de navegacion se creara en la sesion 3--> </nav>
+            <ul>
+                <li><a href="index.html">Inicio</a> </li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <!--Aqui la barra de navegacion se creara en la sesion 3-->
+        </nav>
     </header>
     <main>
-       <p>Esta es la pagina de contacto</p>
-       <a href="https://www.github.com">Ir a Github</a>
-       <br>
-       <a href="https://www.linked.com">Ir a Linked</a>
+        <p>Esta es la pagina de contacto</p>
+        <a href="https://www.github.com">Ir a Github</a>
+        <br>
+        <a href="https://www.linked.com">Ir a Linked</a>
+        <hr>
+        <form action="/procesar" method="post">
+            <fieldset>
+                <legend>Formulario de contacto</legend>
+            
+            <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre"
+                placeholder="Escriba su nombre completo" maxlength="40" required>
+                <br>
+                <label for="correo">Direccion de correo</label>
+                <input type="email" name="correo" id="correo" required>
+                <br>
+                <label for="asunto">Asunto</label>
+                <select name="asunto" id="asunto">
+                    <option value="0"></option>
+                    <option value="1">Oferta de empleo</option>
+                    <option value="2">Solicitud de proyecto</option>
+                    <option value="3" selected>Otros</option>
+                </select>
+                
+               <!-- <input type="radio" name="tema" id="tema1">Oferta de empleo
+                <input type="radio" name="tema" id="tema2">Solicitud de proyecto
+                <input type="radio" name="tema" id="tema3">Otros-->
+                <br>
+                <label for="terminos">Acepto la politica de confidencialidad</label>
+                <input type="checkbox" name="terminos" id="terminos">
+                <br>
+                <label for="mensaje">Comentarios</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                <br>
+                <button type="submit">Enviar datos</button>
+                <button type="reset">Limpiar formulario</button>
+                </fieldset>
+        </form>
     </main>
     <footer>&copy;2026 - Daniel Sorto, Santa Ana</footer>
 </body>
