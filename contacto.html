@@ -20,11 +20,7 @@
         </nav>
     </header>
     <main>
-        <p>Esta es la pagina de contacto</p>
-        <a href="https://www.github.com">Ir a Github</a>
-        <br>
-        <a href="https://www.linked.com">Ir a Linked</a>
-        <hr>
+      
         <form action="/procesar" method="post">
             <fieldset>
                 <legend>Formulario de contacto</legend>
@@ -34,7 +30,7 @@
                 <br>
                 <label for="correo">Direccion de correo</label>
                 <input type="email" name="correo" id="correo" required>
-                <br>
+                
                 <label for="asunto">Asunto</label>
                 <select name="asunto" id="asunto">
                     <option value="0"></option>
@@ -42,17 +38,13 @@
                     <option value="2">Solicitud de proyecto</option>
                     <option value="3" selected>Otros</option>
                 </select>
-                
-               <!-- <input type="radio" name="tema" id="tema1">Oferta de empleo
-                <input type="radio" name="tema" id="tema2">Solicitud de proyecto
-                <input type="radio" name="tema" id="tema3">Otros-->
-                <br>
+    
                 <label for="terminos">Acepto la politica de confidencialidad</label>
                 <input type="checkbox" name="terminos" id="terminos">
-                <br>
+                
                 <label for="mensaje">Comentarios</label>
                 <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                <br>
+                
                 <button type="submit">Enviar datos</button>
                 <button type="reset">Limpiar formulario</button>
                 </fieldset>
